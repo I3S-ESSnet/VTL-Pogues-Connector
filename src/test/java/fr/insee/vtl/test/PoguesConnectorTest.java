@@ -18,8 +18,6 @@ class PoguesConnectorTest {
 		assertNull(poguesConnector.getDataset("WRONG_ID"));
 		Dataset poguesDataset = poguesConnector.getDataset(PoguesConnector.DATASET_ID);
 		assertNotNull(poguesDataset);
-		assertTrue(poguesDataset.getDataStructure().containsKey("ID"));
-
-		
+		assertTrue(poguesDataset.getDataStructure().containsKey("ID"));		
 	}
 }
